@@ -11,7 +11,6 @@ while tickets_sold < max_tickets:
     if name == 'XXX':
         break
 
-    
     tickets_sold += 1
 # Output number of tickets sold
 remaining_tickets = max_tickets - tickets_sold

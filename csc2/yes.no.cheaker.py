@@ -7,6 +7,6 @@ print ('Instructions')
 if Instructions == 'yes':
     print ('show_instructions')
 elif  Instructions == 'no':
-    pas s
+    pass
 else:
     print ('Please answer Yes or No')
