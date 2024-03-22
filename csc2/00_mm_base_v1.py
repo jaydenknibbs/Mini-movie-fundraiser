@@ -1,3 +1,37 @@
+
+#cheaks if user has entered yes or no
+def not_blank (qestion):
+    while True:
+        response =input(qestion)
+
+        if response == "":
+            print ('sorry this cant be blank. please try again.')
+        else:
+            return response
+  
+        while True:
+            response = input(qestion)
+            if response == "":
+                print ('sorry this cant be blank')
+            else:
+                return response
+
+
+
+def yes_no(question):
+    while True:
+        response = input(question).lower()
+
+        if response == 'yes' or response == 'y':
+            return "yes"
+
+        elif response == 'no' or response == 'n':
+            return "no"
+
+        else:
+            print("Please enter yes or no")
+
+
 # Set max ticket amount
 max_tickets = 3
 # Initialize tickets_sold outside the loop
@@ -29,7 +63,7 @@ while True:
 
 # Loop for ticket sales
 while tickets_sold < max_tickets:
-    name = input("Please enter your name or type 'XXX' here to quit: ")
+    name = not_blank("Please enter your name or type 'XXX' here to quit: ")
 
     if name == 'xxx':
         break
